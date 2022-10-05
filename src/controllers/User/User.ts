@@ -1,6 +1,6 @@
 import { Request,Response } from "express";
 import { CrudController } from '../CrudController';
-import userjson from '../../resources/users.json';
+import usersjson from '../../resources/users.json';
 
 export class UserController extends CrudController{
     public create(req:Request<import("express-serve-static-core").ParamsDictionary>,res:Response):void{
@@ -8,7 +8,7 @@ export class UserController extends CrudController{
     }
 
     public read(req:Request<import("express-serve-static-core").ParamsDictionary>,res:Response):void{
-        res.json(userjson);
+        res.json(usersjson);
     }
     
     public update(req:Request<import("express-serve-static-core").ParamsDictionary>,res:Response):void{

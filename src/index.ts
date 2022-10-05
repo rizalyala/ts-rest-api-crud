@@ -8,7 +8,7 @@ app.use(express.json());
 app.get('/',(req,res)=>{
     res.send('Selamat Datang')
 });
-app.use('/user',userRouter);
+app.use('/users',userRouter);
 
 app.listen(PORT,()=>{
     console.log(`Endpoint ${PORT}`)
